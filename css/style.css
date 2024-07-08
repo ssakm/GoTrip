@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  height: 100px;
+  padding: 38px 0;
+  background: #3e8989;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  gap: 30px;
+}
+
+.header__list-item-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.header__list-item-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+.header__list-item-link:hover::after {
+  width: 105%;
+}
+
+.header__form {
+  display: flex;
+  gap: 0px;
+}
+
+.header__form-input {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  width: 216px;
+  height: 35px;
+  border-radius: 20px 0px 0px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #898989;
+  border: 0px;
+}
+
+.header__form-btn {
+  width: 74px;
+  height: 35px;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  background: #295e5e;
+  border: 0px;
+}
+
+.banner {
+  background: url(../img/banner.png) no-repeat center top / cover;
+  height: 90svh;
+  position: relative;
+  z-index: 500;
+  margin-bottom: 80px;
+}
+
+.banner__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__title {
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.banner__title2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.banner__btn {
+  background: #b4436c;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  opacity: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.banner__btn:hover {
+  color: #b4436c;
+  background: #fff;
+}
+
+.aboutUs {
+  width: 100%;
+  height: 360px;
+  margin-bottom: 98px;
+}
+
+.aboutUs__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.aboutUs__title {
+  color: #3e8989;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.aboutUs__content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.aboutUs__desc-text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 545px;
+  height: 105px;
+}
+
+.aboutUs__desc-text2 {
+  font-size: 18px;
+  font-weight: 400;
+  width: 545px;
+  height: 63px;
+}
+
+.catalog {
+  height: 460px;
+  margin-bottom: 100px;
+}
+
+.catalog__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 54px;
+}
+
+.catalog__title {
+  color: #3e8989;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.catalog__cards {
+  display: flex;
+  gap: 20px;
+}
+
+.catalog__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.catalog__card-title {
+  font-size: 24px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.catalog__card-title:hover {
+  color: #b4436c;
+}
+
+.contacts {
+  margin-bottom: 104px;
+  height: 166px;
+}
+
+.contacts__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contacts__title {
+  color: #3e8989;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.contacts__desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts__desc-text {
+  width: 556px;
+  height: 48px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contacts__desc__contacts {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.contacts__desc__contacts-num {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contacts__desc__contacts-mail {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer {
+  background: #3e8989;
+}
+
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer__list {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.footer__list-item-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__title {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 15px;
+}
